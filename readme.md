@@ -16,9 +16,56 @@
 
 By simplifying the documentation process, **Dockumentor** helps you focus more on development and less on the manual effort of maintaining up-to-date documentation of your Docker setups.
 
-# Project Status Update
+## Installation
 
-**Development in Progress:** Please note that this project is currently under development. More features and updates are coming soon.
+To install Dockumentor, you can use pip, the Python package manager. Make sure you have Python and pip installed on your system. Then run the following command:
+
+```bash
+pip install dockumentor
+```
+
+## Usage
+
+Once installed, you can use the Dockumentor CLI to generate a README for your project with Docker Compose.
+
+### Generating Documentation
+
+To generate a README for a project with a Docker Compose configuration, navigate to your project directory and run the following command:
+
+```bash
+dockumentor --compose-file path/to/docker-compose.yml --output README.md
+```
+
+- `--compose-file`: Specify the path to your `docker-compose.yml` file.
+- `--output`: Specify the path to the output file (e.g., `README.md`). This is where the generated documentation will be written.
+
+### Example Command
+
+```bash
+dockumentor --compose-file ./docker-compose.yml --output ./README.md
+```
+
+### Appending to Existing Documentation
+
+If you want to append the generated documentation to an existing README file, use the `--append` option:
+
+```bash
+dockumentor --compose-file ./docker-compose.yml --output ./README.md --append
+```
+
+This will insert the generated documentation within specific markers in the existing README file, ensuring that the new content is added without overwriting the existing content.
+
+### Customizing the Template
+
+Dockumentor uses Jinja2 templates to format the generated documentation. You can customize the template to match your project's documentation style. Create a custom template file and specify its path using the `--template` option.
+
+#### Example Command with Custom Template
+
+```bash
+dockumentor --compose-file ./docker-compose.yml --template ./templates/dockumentor_compose.md --output ./README.md
+```
+
+This command specifies a custom template for generating the documentation. If you don't specify a template, Dockumentor will use a default template.
 
 ## Author
 

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dockumentor"
-version = "0.1.0"
+version = "0.1.1"
 description = "Dockumentor is a Python utility that automates the generation of detailed documentation for Docker Compose projects. It interprets Docker Compose configurations to produce visual diagrams and markdown documentation, leveraging Mermaid diagrams and Jinja2 templates to provide clear and customizable representations of service architectures. Ideal for development teams and educators, Dockumentor streamlines the process of maintaining accurate and visual documentation for Docker environments."
 authors = ["Lucian BLETAN <neuraluc@gmail.com>"]
 license = "MIT"
