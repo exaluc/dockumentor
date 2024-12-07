@@ -69,4 +69,4 @@ This command specifies a custom template for generating the documentation. If yo
 
 ## Author
 
-- [Lucian BLETAN](https://github.com/exaluc)
+- [Lucian BLETAN](https://github.com/gni)
